@@ -16,8 +16,17 @@ function appendTopword (word) {
   `);
 };
 
+function breakDown() {
+  var allText = document.getElementById("tx").value;
+  var splitText = allText.split(" ");
+  console.log(splitText);
+}
+
 $(document).ready(() => {
-  // have fun!
   getTopword();
+
+  $( "#bk" ).click(function() {
+  breakDown();
+  });
 
 })
