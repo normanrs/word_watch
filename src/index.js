@@ -23,6 +23,7 @@ function breakDown() {
   splitText.forEach(function(splitWord) {
     postThis(splitWord);
   });
+  alert(`Posted ${splitText.length}`)
 }
 
 function postThis(word_in){
